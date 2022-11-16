@@ -70,6 +70,9 @@ class _SignupScreenState extends State<SignupScreen> {
                                 suffixIcon:Icon(Icons.lock,color: Colors.red,size:30,)),
                           )
                       ),
+                      Text("Forget Password?",style: TextStyle(color: Colors.red
+                      ),textAlign: TextAlign.end,),
+                      Text("Login With"),
                       ElevatedButton(
                           onPressed: validate,
                           child:Text("LOGIN"))

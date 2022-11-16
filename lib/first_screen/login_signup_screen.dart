@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Signup_screen.dart';
+import 'login_screen.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -26,8 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
           bottom: TabBar(tabs: [
             Text("SIGNUP",style: TextStyle(fontSize: 30),),
-            Text("LOGIN",style: TextStyle(fontSize: 30),)
+            Text("LOGIN",style: TextStyle(fontSize: 30,color: Colors.blueGrey),),
           ],
+            onTap:(index){
+            print(index);
+            } ,
             unselectedLabelColor: Colors.white,
             indicator: BoxDecoration(color: Colors.red,borderRadius:
             BorderRadius.only(topRight:Radius.circular(20))),
@@ -35,7 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: Column(
           children: [
-            Expanded(child: TabBarView(children: [LoginPage()],)),
+            Expanded(child: TabBarView(children: [LoginPage(),
+              SignupScreen(),
+            ],)),
           ],
         ),
       ),
