@@ -62,7 +62,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: TextFormField(
-                            initialValue: "Ayush Sharma",
+                            initialValue: "Ayush",
                             showCursor: false,
                             obscureText: true,
                             decoration: InputDecoration(labelText: "PASSWORD",labelStyle:
